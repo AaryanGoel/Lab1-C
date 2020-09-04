@@ -7,7 +7,7 @@
 #include <stdlib.h>
 int main(void) {
   char *Celsius = readline("Enter temperature in celsius: ");
-  double Dc = stof(Celsius);
+  double Dc = atof(Celsius);
   double fahrenheit = (Dc* 9/5 + 32 );
 
   printf("%f° in Celsius is equivalent to %f° Fahrenheit.\n", Dc, fahrenheit);
